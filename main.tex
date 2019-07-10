@@ -1,11 +1,28 @@
-\documentclass[a4paper,twoside]{scrbook}
-\begin{document}
-\title{21 Lessons}
+\documentclass{tufte-book}[a4paper,twoside]
+
+% Packages
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title{Alice in Bitcoinland}
+
 \author{Gigi}
+
+\publisher{Do I Really Need a Publisher}
+
+\begin{document}
+
 \frontmatter
+
 \maketitle
-\tableofcontents
-\mainmatter
-\chapter{Introduction}
-Some text ...
+
+\cleardoublepage
+
+\chapter{My first chapter}
+
+\lipsum[5]
+
 \end{document}
