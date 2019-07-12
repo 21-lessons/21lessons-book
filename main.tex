@@ -143,6 +143,19 @@
 \usepackage{makeidx}
 \makeindex
 
+%%
+% Chapter/Lesson Quotes
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][4em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  %{\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+  \par\bigskip
+\makeatother
+
 \begin{document}
 
 \frontmatter
