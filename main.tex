@@ -21,6 +21,22 @@
 \usepackage{booktabs}
 
 %%
+% Bibliography stuff: Biber, BibTex, BibLatex
+%\usepackage[autostyle]{csquotes}
+% \usepackage[
+    % backend=biber,
+    % style=authoryear-icomp,
+    % sortlocale=de_DE,
+    % natbib=true,
+    % url=false,
+    % doi=true,
+    % eprint=false
+% ]{biblatex}
+% \usepackage[backend=biber]{biblatex}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+
+%%
 % Hyperlinks
 \usepackage{hyperref}
 
@@ -48,21 +64,6 @@
 %%
 % Prints a trailing space in a smart way.
 \usepackage{xspace}
-
-%%
-% Some shortcuts for Tufte's book titles.  The lowercase commands will
-% produce the initials of the book title in italics.  The all-caps commands
-% will print out the full title of the book in italics.
-\newcommand{\vdqi}{\textit{VDQI}\xspace}
-\newcommand{\ei}{\textit{EI}\xspace}
-\newcommand{\ve}{\textit{VE}\xspace}
-\newcommand{\be}{\textit{BE}\xspace}
-\newcommand{\VDQI}{\textit{The Visual Display of Quantitative Information}\xspace}
-\newcommand{\EI}{\textit{Envisioning Information}\xspace}
-\newcommand{\VE}{\textit{Visual Explanations}\xspace}
-\newcommand{\BE}{\textit{Beautiful Evidence}\xspace}
-
-\newcommand{\TL}{Tufte-\LaTeX\xspace}
 
 % Prints the month name (e.g., January) and the year (e.g., 2008)
 \newcommand{\monthyear}{%
@@ -172,9 +173,12 @@
 \input{chapters/ch0-02-introduction}
 \input{chapters/ch1-00-philosophy}
 \input{lessons/ch1-01-immutability-and-change}
+\input{lessons/ch1-02-the-scarcity-of-scarcity}
 \input{lessons/ch1-04-the-problem-of-identity}
 \input{chapters/ch2-00-economics}
 \input{chapters/ch3-00-technology}
 \input{chapters/ch4-00-conclusion}
+
+\bibliography{main}
 
 \end{document}
