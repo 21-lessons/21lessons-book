@@ -1,10 +1,31 @@
 % !TEX root = main.tex
-\documentclass{tufte-book}%[a4paper,twoside]
+% \documentclass{tufte-book}%[a4paper,twoside]
 % See https://github.com/Tufte-LaTeX/tufte-latex/blob/master/sample-book.tex for details
+
+% --- AMAZON ---
+% WITHOUT BLEED
+% US Trade => 6x9
+\documentclass[paper=6in:9in,pagesize=pdftex,
+               headinclude=on,footinclude=on,12pt]{scrbook}
+%
+% Paper width
+% W = 6in
+% Paper height
+% H = 9in
+% Paper gutter
+% BCOR = 0.5in
+% Margin (0.5in imposed on lulu, recommended on createspace)
+% m = 0.5in
+% Text height
+% h = H - 2m = 8in
+% Text width
+% w = W - 2m - BCOR = 4.5in
+\areaset[0.50in]{4.5in}{8in}
+% --- AMAZON ---
 
 \title{21 Lessons}
 \author{Gigi}
-\publisher{Do I Really Need a Publisher}
+% \publisher{Do I Really Need a Publisher}
 
 % Packages
 \usepackage{lipsum}
@@ -173,29 +194,29 @@
 \input{chapters/ch0-02-introduction}
 \input{chapters/ch1-00-philosophy}
 \input{lessons/ch1-01-immutability-and-change}
-\input{lessons/ch1-02-the-scarcity-of-scarcity}
-\input{lessons/ch1-03-replication-and-locality}
-\input{lessons/ch1-04-the-problem-of-identity}
-\input{lessons/ch1-05-an-immaculate-conception}
-\input{lessons/ch1-06-the-power-of-free-speech}
-\input{lessons/ch1-07-the-limits-of-knowledge}
-\input{chapters/ch2-00-economics}
-\input{lessons/ch2-08-financial-ignorance}
-\input{lessons/ch2-09-inflation}
-\input{lessons/ch2-10-value}
-\input{lessons/ch2-11-money}
-\input{lessons/ch2-12-the-history-and-downfall-of-money}
-\input{lessons/ch2-13-fractional-reserve-insanity}
-\input{lessons/ch2-14-sound-money}
-\input{chapters/ch3-00-technology}
-\input{lessons/ch3-15-strength-in-numbers}
-\input{lessons/ch3-16-reflections-on-dont-trust-verify}
-\input{lessons/ch3-17-telling-time-takes-work}
-\input{lessons/ch3-18-move-slowly-and-dont-break-things}
-\input{lessons/ch3-19-privacy-is-not-dead}
-\input{lessons/ch3-20-cypherpunks-write-code}
-\input{lessons/ch3-21-metaphors-for-bitcoins-future}
-\input{chapters/ch4-00-conclusion}
+% \input{lessons/ch1-02-the-scarcity-of-scarcity}
+% \input{lessons/ch1-03-replication-and-locality}
+% \input{lessons/ch1-04-the-problem-of-identity}
+% \input{lessons/ch1-05-an-immaculate-conception}
+% \input{lessons/ch1-06-the-power-of-free-speech}
+% \input{lessons/ch1-07-the-limits-of-knowledge}
+% \input{chapters/ch2-00-economics}
+% \input{lessons/ch2-08-financial-ignorance}
+% \input{lessons/ch2-09-inflation}
+% \input{lessons/ch2-10-value}
+% \input{lessons/ch2-11-money}
+% \input{lessons/ch2-12-the-history-and-downfall-of-money}
+% \input{lessons/ch2-13-fractional-reserve-insanity}
+% \input{lessons/ch2-14-sound-money}
+% \input{chapters/ch3-00-technology}
+% \input{lessons/ch3-15-strength-in-numbers}
+% \input{lessons/ch3-16-reflections-on-dont-trust-verify}
+% \input{lessons/ch3-17-telling-time-takes-work}
+% \input{lessons/ch3-18-move-slowly-and-dont-break-things}
+% \input{lessons/ch3-19-privacy-is-not-dead}
+% \input{lessons/ch3-20-cypherpunks-write-code}
+% \input{lessons/ch3-21-metaphors-for-bitcoins-future}
+% \input{chapters/ch4-00-conclusion}
 
 \bibliography{main}
 
