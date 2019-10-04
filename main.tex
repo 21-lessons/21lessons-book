@@ -2,7 +2,7 @@
 % \documentclass{tufte-book}%[a4paper,twoside]
 % See https://github.com/Tufte-LaTeX/tufte-latex/blob/master/sample-book.tex for details
 
-% --- AMAZON ---
+% --- AMAZON BEGIN ---
 % WITHOUT BLEED
 % US Trade => 6x9
 \documentclass[paper=6in:9in,pagesize=pdftex,
@@ -21,11 +21,11 @@
 % Text width
 % w = W - 2m - BCOR = 4.5in
 \areaset[0.50in]{4.5in}{8in}
-% --- AMAZON ---
+% --- AMAZON END ---
 
 \title{21 Lessons}
+\subtitle{What I've Learned from Falling Down the Bitcoin Rabbit Hole }
 \author{Gigi}
-% \publisher{Do I Really Need a Publisher}
 
 % Packages
 \usepackage{lipsum}
@@ -33,6 +33,12 @@
 \usepackage{graphicx}
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{graphics/}}
+
+%%
+% For Quotes
+\usepackage{csquotes}
+\renewcommand\mkbegdispquote[2]{\makebox[0pt][r]{\textquotedblleft\,}}
+\renewcommand\mkenddispquote[2]{\,\textquotedblright#2}
 
 %%
 % Just some sample text
