@@ -28,14 +28,14 @@ is the innovation. It is the root of Bitcoin's resilience, the reason
 why it is still alive. Decentralization is also why we have mining,
 nodes, hardware wallets, and yes, the blockchain. The only thing you
 have to "trust" is that our understanding of mathematics and physics
-isn't totally off and that the [majority] of miners act honestly (which
+isn't totally off and that the majority of miners act honestly (which
 they are incentivized to do).
 
 While the regular world operates under the assumption of *"trust, but
 verify,"\textit{ Bitcoin operates under the assumption of }"don't trust,
 verify."* Satoshi made the importance of removing trust very clear in
-both the introduction as well as the conclusion of the [Bitcoin
-whitepaper][Nakamoto].
+both the introduction as well as the conclusion of the Bitcoin
+whitepaper.
 
 \begin{quotation}
 ``Conclusion: We have proposed a system for electronic transactions
@@ -52,9 +52,9 @@ As Ken Thompson showed in his Turing Award lecture, trust is an
 extremely tricky thing in the computational world. When running a
 program, you have to trust all kinds of software (and hardware) which,
 in theory, could alter the program you are trying to run in a malicious
-way. As Thompson summarized in his [\textit{Reflections on Trusting Trust}][]:
-"The moral is obvious. You can't trust code that you did not totally
-create yourself."
+way. As Thompson summarized in his \textit{Reflections on Trusting Trust}:
+\enquote{The moral is obvious. You can't trust code that you did not totally
+create yourself.}~\cite{trusting-trust}
 
 \begin{figure}
   \includegraphics{assets/images/ken-thompson-hack.png}
@@ -76,16 +76,15 @@ the universe.''
 \flushright -- Carl Sagan\footnote{Carl Sagan, \textit{Cosmos} \cite{cosmos}}
 \end{quotation}
 
-The Ken Thompson Hack is a particularly ingenious and hard-to-detect
-backdoor, so let's take a quick look at a hard-to-detect backdoor which
-works without modifying any software. Researchers [found a way] to
-compromise security-critical hardware by altering the polarity of
-silicon impurities. Just by changing the physical properties of the
-stuff that computer chips are made of they were able to compromise a
-cryptographically secure random number generator. Since this change
-can't be seen, the backdoor can't be detected by optical inspection,
-which is one of the most important tamper-detection mechanism for chips
-like these.
+The Ken Thompson Hack is a particularly ingenious and hard-to-detect backdoor,
+so let's take a quick look at a hard-to-detect backdoor which works without
+modifying any software. Researchers found a way to compromise security-critical
+hardware by altering the polarity of silicon
+impurities.~\cite{becker2013stealthy} Just by changing the physical properties
+of the stuff that computer chips are made of they were able to compromise a
+cryptographically secure random number generator. Since this change can't be
+seen, the backdoor can't be detected by optical inspection, which is one of the
+most important tamper-detection mechanism for chips like these.
 
 \begin{figure}
   \includegraphics{assets/images/stealthy-hardware-trojan.png}
@@ -95,12 +94,12 @@ like these.
 
 Sounds scary? Well, even if you would be able to build everything from
 scratch, you would still have to trust the underlying mathematics. You
-would have to trust that [secp256k1] is an elliptic curve without
+would have to trust that \textit{secp256k1} is an elliptic curve without
 backdoors. Yes, malicious backdoors can be inserted in the mathematical
-foundations of cryptographic functions and arguably this [has already
-happened] at least once. There are good reasons to be paranoid, and the
+foundations of cryptographic functions and arguably this has already
+happened at least once.~\cite{wiki:Dual_EC_DRBG} There are good reasons to be paranoid, and the
 fact that everything from your hardware, to your software, to the
-elliptic curves used can have [backdoors] are some of them.
+elliptic curves used can have backdoors~\cite{wiki:backdoors} are some of them.
 
 \begin{quotation}
 ``Don't trust. Verify.''
@@ -114,14 +113,14 @@ you will also have to trust that computation requires energy, that P
 does not equal NP, and that you are actually in base reality and not
 emprisoned in a simulation by malicious actors.
 
-Developers are working on tools and procedures to minimize any remaining
-trust even further. For example, Bitcoin developers created [Gitian],
-which is a software distribution method to create deterministic builds.
-The idea is that if multiple developers are able to reproduce identical
-binaries, the chance of malicious tampering is reduced. Fancy backdoors
-aren't the only attack vector. Simple blackmail or extortion are real
-threats as well. As in the main protocol, decentralization is used to
-minimize trust.
+Developers are working on tools and procedures to minimize any remaining trust
+even further. For example, Bitcoin developers created
+Gitian\footnote{\url{https://gitian.org/}}, which is a software distribution
+method to create deterministic builds. The idea is that if multiple developers
+are able to reproduce identical binaries, the chance of malicious tampering is
+reduced. Fancy backdoors aren't the only attack vector. Simple blackmail or
+extortion are real threats as well. As in the main protocol, decentralization is
+used to minimize trust.
 
 Various efforts are being made to improve upon the chicken-and-egg
 problem of [bootstrapping] which Ken Thompson's hack so brilliantly
