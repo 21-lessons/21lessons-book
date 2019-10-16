@@ -24,8 +24,8 @@ a way to implement a distributed timestamp server.
 \end{figure}
 
 When I first learned how Bitcoin works I also thought that proof-of-work
-is inefficient and wasteful. After a while, I started to [shift my
-perspective on Bitcoin's energy consumption][energy]. It seems that
+is inefficient and wasteful. After a while, I started to shift my
+perspective on Bitcoin's energy consumption~\cite{gigi:energy}. It seems that
 proof-of-work is still widely misunderstood today, in the year 10 AB
 (after Bitcoin).
 
@@ -40,15 +40,14 @@ and in what order it happened. This independent validation is what leads
 to consensus, an individual agreement by multiple parties about who owns
 what.
 
-In a radically decentralized environment, we don't have the luxury of
-absolute time. Any clock would introduce a trusted third party, a
-central point in the system which had to be relied upon and could be
-attacked. "Timing is the root problem," as Grisha Trubetskoy [points
-out]. And Satoshi brilliantly solved this problem by implementing a
-decentralized clock via a proof-of-work blockchain. Everyone agrees
-beforehand that the chain with the most cumulative work is the source of
-truth. It is per definition what actually happened. This agreement is
-what is now known as Nakamoto consensus.
+In a radically decentralized environment, we don't have the luxury of absolute
+time. Any clock would introduce a trusted third party, a central point in the
+system which had to be relied upon and could be attacked. \enquote{Timing is the root
+problem,} as Grisha Trubetskoy points out~\cite{pow-clock}. And Satoshi
+brilliantly solved this problem by implementing a decentralized clock via a
+proof-of-work blockchain. Everyone agrees beforehand that the chain with the
+most cumulative work is the source of truth. It is per definition what actually
+happened. This agreement is what is now known as Nakamoto consensus.
 
 \begin{quotation}
 ``The network timestamps transactions by hashing them into an ongoing
