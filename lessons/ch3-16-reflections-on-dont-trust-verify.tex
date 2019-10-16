@@ -122,15 +122,15 @@ reduced. Fancy backdoors aren't the only attack vector. Simple blackmail or
 extortion are real threats as well. As in the main protocol, decentralization is
 used to minimize trust.
 
-Various efforts are being made to improve upon the chicken-and-egg
-problem of [bootstrapping] which Ken Thompson's hack so brilliantly
-pointed out. One such effort is [Guix] (pronounced \textit{geeks}), which uses
-functionally declared package management leading to bit-for-bit
-reproducible builds by design. The result is that you don't have to
-trust any software-providing servers anymore since you can verify that
-the served binary was not tampered with by rebuilding it from scratch.
-As of this writing, a [pull-request] is in progress to integrate Guix
-into the Bitcoin build process.
+Various efforts are being made to improve upon the chicken-and-egg problem of
+bootstrapping which Ken Thompson's hack so brilliantly pointed
+out~\cite{web:bootstrapping}. One such effort is
+Guix\footnote{\url{https://guix.gnu.org}} (pronounced \textit{geeks}), which
+uses functionally declared package management leading to bit-for-bit
+reproducible builds by design. The result is that you don't have to trust any
+software-providing servers anymore since you can verify that the served binary
+was not tampered with by rebuilding it from scratch. Recently, a
+pull-request was merged to integrate Guix into the Bitcoin build process.\footnote{See PR 15277 of \texttt{bitcoin-core}: \\ \url{https://github.com/bitcoin/bitcoin/pull/15277}}
 
 \begin{figure}
   \includegraphics{assets/images/guix-bootstrap-dependencies.png}
@@ -146,12 +146,12 @@ every hardware wallet, every cryptographic library, every node
 implementation, and every compiler of every language is compromised.
 Possible, but highly unlikely.
 
-Note that you can generate a private key without relying on any
-computational hardware or software. You can [flip a coin] a couple of
-times, although depending on your coin and tossing style this source of
-randomness might not be sufficiently random. There is a reason why
-storage protocols like [Glacier] advise to use casino-grade dice as one
-of two sources of entropy.
+Note that you can generate a private key without relying on any computational
+hardware or software. You can flip a coin~\cite{antonopoulos2014mastering} a
+couple of times, although depending on your coin and tossing style this source
+of randomness might not be sufficiently random. There is a reason why storage
+protocols like Glacier\footnote{\url{https://glacierprotocol.org/}} advise to
+use casino-grade dice as one of two sources of entropy.
 
 Bitcoin forced me to reflect on what trusting nobody actually entails.
 It raised my awareness of the bootstrapping problem, and the implicit
