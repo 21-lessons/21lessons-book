@@ -44,15 +44,13 @@ chose something more reliable than human restraint: mathematics.
   \label{fig:supply-formula-white}
 \end{figure}
 
-While this formula is useful to describe Bitcoin's supply, it is
-actually nowhere to be found in the code. Issuance of new bitcoin is
-done in an [algorithmically controlled] fashion, by reducing the reward
-which is paid to miners every four years. The formula above is used to
-quickly sum up what is happening under the hood. What really happens can
-be best seen by looking at the change in block reward, the reward paid
-out to whoever finds a valid block, which roughly happens every 10
-minutes.
-
+While this formula is useful to describe Bitcoin's supply, it is actually
+nowhere to be found in the code. Issuance of new bitcoin is done in an
+algorithmically controlled fashion, by reducing the reward which is paid to
+miners every four years.~\cite{btcwiki:supply} The formula above is used to
+quickly sum up what is happening under the hood. What really happens can be best
+seen by looking at the change in block reward, the reward paid out to whoever
+finds a valid block, which roughly happens every 10 minutes.
 
 \begin{figure}
   \includegraphics{assets/images/you-are-here.png}
@@ -100,21 +98,20 @@ of the current money supply. The \textit{flow} is how much there is produced
 over a period of time (e.g. per year). The key to understanding sound
 money is in understanding this stock-to-flow ratio.
 
-Calculating the stock-to-flow ratio for fiat currency is difficult,
-because [how much money there is] depends on how you look at it. You
+Calculating the stock-to-flow ratio for fiat currency is difficult, because how
+much money there is depends on how you look at it.~\cite{wiki:money-supply} You
 could count only banknotes and coins (M0), add traveler checks and check
-deposits (M1), add saving accounts and mutual funds and some other
-things (M2), and even add certificates of deposit to all of that (M3).
-Further, how all of this is defined and measured varies from country to
-country and since the US Federal Reserve [stopped publishing] numbers
-for M3, we will have to make do with the M2 monetary supply. I would
-love to verify these numbers, but I guess we have to trust the fed for
-now.
+deposits (M1), add saving accounts and mutual funds and some other things (M2),
+and even add certificates of deposit to all of that (M3). Further, how all of
+this is defined and measured varies from country to country and since the US
+Federal Reserve stopped publishing \cite{web:fed-m3} numbers for M3, we will
+have to make do with the M2 monetary supply. I would love to verify these
+numbers, but I guess we have to trust the fed for now.
 
 Gold, one of the rarest metals on earth, has the highest stock-to-flow
 ratio. According to the US Geological Survey, a little more than 190,000
-tons have been mined. In the [last few years], around 3100 tons of gold
-have been mined per year.
+tons have been mined. In the last few years, around 3100 tons of gold
+have been mined per year.~\cite{mineral-commodity-summaries}
 
 Using these numbers, we can easily calculate the stock-to-flow ratio for
 gold:
@@ -128,11 +125,11 @@ gold:
   \label{fig:stock-to-flow-gold}
 \end{figure}
 
-Nothing has a higher stock-to-flow ratio than gold. This is why gold, up
-to now, was the hardest, soundest money in existence. It is often said
-that all the gold mined so far would fit in two olympic-sized swimming
-pools. According to [my calculations], we would need four. So maybe this
-needs updating, or Olympic-sized swimming pools got smaller.
+Nothing has a higher stock-to-flow ratio than gold. This is why gold, up to now,
+was the hardest, soundest money in existence. It is often said that all the gold
+mined so far would fit in two olympic-sized swimming pools. According to my
+calculations\footnote{\url{https://bit.ly/gold-pools}}, we would need four. So
+maybe this needs updating, or Olympic-sized swimming pools got smaller.
 
 Enter Bitcoin. As you probably know, bitcoin mining was all the rage in
 the last couple of years. This is because we are still in the early
@@ -184,20 +181,20 @@ The simplicity of the difficulty adjustment algorithm might distract
 from its profundity, but the difficulty adjustment truly is a revolution
 of Einsteinian proportions. It ensures that, no matter how much or how
 little effort is spent on mining, Bitcoin's controlled supply won't be
-disrupted. As opposed to every other resource, no matter how [much
-energy] someone will put into mining bitcoin, the total reward will not
+disrupted. As opposed to every other resource, no matter how much
+energy someone will put into mining bitcoin, the total reward will not
 increase.
 
-Just like $E=mc^2$ dictates the [universal speed limit] in our universe,
+Just like $E=mc^2$ dictates the universal speed limit in our universe,
 Bitcoin's difficulty adjustment dictates the \textbf{universal money limit}
 in Bitcoin.
 
-If it weren't for this difficulty adjustment, all bitcoins would have
-been mined already. If it weren't for this difficulty adjustment,
-Bitcoin probably wouldn't have survived in its infancy. It is what
-secures the network in its reward era. It is what ensures a steady and
-[fair distribution] of new bitcoin. It is the thermostat which regulates
-Bitcoin's monetary policy.
+If it weren't for this difficulty adjustment, all bitcoins would have been mined
+already. If it weren't for this difficulty adjustment, Bitcoin probably wouldn't
+have survived in its infancy. It is what secures the network in its reward era.
+It is what ensures a steady and fair distribution\footnote{Dan Held,
+\textit{Bitcoin's Distribution was Fair}~\cite{distribution-was-fair}} of new
+bitcoin. It is the thermostat which regulates Bitcoin's monetary policy.
 
 Einstein showed us something novel: no matter how hard you push an
 object, at a certain point you won't be able to get more speed out of
