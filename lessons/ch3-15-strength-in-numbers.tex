@@ -26,10 +26,13 @@ increase by three orders of magnitude: $10^6$, $10^9$, $10^{12}$. Thinking about
 seconds is not very useful, so let's translate this into something we can wrap
 our head around:
 
--  $10^6$: One million seconds was $1 1/2$ weeks ago.
--  $10^9$: One billion seconds was almost 32 years ago.
--  $10^{12}$: One trillion seconds ago Manhattan was covered under a [thick
-    layer of ice].
+\begin{itemize}
+  \item $10^6$: One million seconds was $1 1/2$ weeks ago.
+  \item $10^9$: One billion seconds was almost 32 years ago.
+  \item $10^{12}$: One trillion seconds ago Manhattan was covered under a thick
+  layer of ice.\footnote{One trillion seconds ($10^{12}$) was $31710$ years ago. The Last Glacial
+  Maximum was $33,000$ years ago.~\cite{wiki:LGM}}
+\end{itemize}
 
 \begin{figure}
   \includegraphics{assets/images/xkcd-1125.png}
@@ -45,11 +48,13 @@ day-to-day life. Many orders of magnitude larger. Understanding how
 large these numbers truly are is essential to understanding Bitcoin as a
 whole.
 
-Let's take [SHA-256], one of the [hash functions] used in Bitcoin, as a
-concrete example. It is only natural to think about 256 bits as "two
-hundred fifty-six," which isn't a large number at all. However, the
-number in SHA-256 is talking about orders of magnitude --- something our
-brains are not well-equipped to deal with.
+Let's take SHA-256\footnote{SHA-256 is part of the SHA-2 family of cryptographic
+hash functions developed by the NSA.~\cite{wiki:sha2}}, one of the hash
+functions\footnote{Bitcoin uses SHA-256 in its block hashing
+algorithm.~\cite{btcwiki:block-hashing}} used in Bitcoin, as a concrete example.
+It is only natural to think about 256 bits as "two hundred fifty-six," which
+isn't a large number at all. However, the number in SHA-256 is talking about
+orders of magnitude --- something our brains are not well-equipped to deal with.
 
 While bit length is a convenient metric, the true meaning of 256-bit
 security is lost in translation. Similar to the millions ($10^6$) and
