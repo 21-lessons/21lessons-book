@@ -1,52 +1,53 @@
-\chapter{Lesson 18: Move Slowly and Don't Break Things}
+\chapter{Move Slowly and Don't Break Things}
 \label{les:18}
 
 \begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
 So the boat wound slowly along, beneath the bright summer-day, with its merry crew and its music of voices and laughter...
 \end{chapquote}
 
-It might be a dead mantra, but "move fast and break things" is still how
+It might be a dead mantra, but \enquote{move fast and break things} is still how
 much of the tech world operates. The idea that it doesn't matter if you
-get things right the first time is a basic pillar of the *fail early,
-fail often* mentality. Success is measured in growth, so as long as you
+get things right the first time is a basic pillar of the \textit{fail early,
+fail often} mentality. Success is measured in growth, so as long as you
 are growing everything is fine. If something doesn't work at first you
 simply pivot and iterate. In other words: throw enough shit against the
 wall and see what sticks.
 
 Bitcoin is very different. It is different by design. It is different
-out of necessity. As Satoshi [pointed out], e-currency has been tried
+out of necessity. As Satoshi pointed out, e-currency has been tried
 many times before, and all previous attempts have failed because there
 was a head which could be cut off. The novelty of Bitcoin is that it is
 a beast without heads.
 
 \begin{quotation}
-``A lot of people automatically dismiss e-currency as a lost cause
+\enquote{A lot of people automatically dismiss e-currency as a lost cause
 because of all the companies that failed since the 1990's. I hope it's
 obvious it was only the centrally controlled nature of those systems
-that doomed them.''
+that doomed them.}
+\flushright -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, in a reply to Sepp Hasslberger \cite{satoshi-centralized-nature}}
 \end{quotation}
-% > <cite>[Satoshi Nakamoto][pointed out]</cite>
 
 One consequence of this radical decentralization is an inherent
-resistance to change. "Move fast and break things" does not and will
+resistance to change. \enquote{Move fast and break things} does not and will
 never work on the Bitcoin base layer. Even if it would be desirable, it
-wouldn't be possible without convincing *everyone* to change their ways.
+wouldn't be possible without convincing \textit{everyone} to change their ways.
 That's distributed consensus. That's the nature of Bitcoin.
 
 \begin{quotation}
-``The nature of Bitcoin is such that once version 0.1 was released, the
-core design was set in stone for the rest of its lifetime.''
+\enquote{The nature of Bitcoin is such that once version 0.1 was released, the
+core design was set in stone for the rest of its lifetime.}
+\flushright -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, in a reply to Gavin Andresen \cite{satoshi-centralized-nature}}
 \end{quotation}
-% > <cite>[Satoshi Nakamoto][4]</cite>
 
 This is one of the many paradoxical properties of Bitcoin. We all came
 to believe that anything which is software can be changed easily. But
 the nature of the beast makes changing it bloody hard.
 
-As Hasu beautifully shows in [Unpacking Bitcoin's Social Contract],
-changing the rules of Bitcoin is only possible by *proposing* a change,
-and consequently *convincing* all users of Bitcoin to adopt this change.
-This makes Bitcoin very resilient to change, even though it is software.
+As Hasu beautifully shows in Unpacking Bitcoin's Social
+Contract~\cite{social-contract}, changing the rules of Bitcoin is only possible
+by \textit{proposing} a change, and consequently \textit{convincing} all users
+of Bitcoin to adopt this change. This makes Bitcoin very resilient to change,
+even though it is software.
 
 This resilience is one of the most important properties of Bitcoin.
 Critical software systems have to be antifragile, which is what the
@@ -58,8 +59,8 @@ environment.
 \begin{quotation}
 ``The rain came down, the floods came, and the winds blew, and beat on
 that house; and it didn't fall, for it was founded on the rock.''
+\flushright -- Matthew 7:24--27
 \end{quotation}
-% > <cite>[Matthew 7:24--27]</cite>
 
 Arguably, in this parable of the wise and the foolish builders Bitcoin
 isn't the house. It is the rock. Unchangeable, unmoving, providing the
@@ -69,15 +70,22 @@ Just like geologists, who know that rock formations are always moving
 and evolving, one can see that Bitcoin is always moving and evolving as
 well. You just have to know where to look and how to look at it.
 
-The introduction of [pay to script hash] and [segregated witness] are
-proof that Bitcoin's rules can be changed if enough users are convinced
-that adopting said change is to the benefit of the network. The latter
-enabled the development of the [lightning network], which is one of the
-houses being built on Bitcoin's solid foundation. Future upgrades like
-[Schnorr signatures] will enhance efficiency and privacy, as well as
-scripts (read: smart contracts) which will be indistinguishable from
-regular transactions thanks to [Taproot]. Wise builders do indeed build
-on solid foundations.
+The introduction of pay to script hash\footnote{ Pay to script hash (P2SH)
+transactions were standardised in BIP 16. They allow transactions to be sent to
+a script hash (address starting with 3) instead of a public key hash (addresses
+starting with 1).~\cite{btcwiki:p2sh}} and segregated
+witness\footnote{Segregated Witness (abbreviated as SegWit) is an implemented
+protocol upgrade intended to provide protection from transaction malleability
+and increase block capacity. SegWit separates the \textit{witness} from the list
+of inputs.~\cite{btcwiki:segwit}} are proof that Bitcoin's rules can be changed
+if enough users are convinced that adopting said change is to the benefit of the
+network. The latter enabled the development of the lightning
+network\footnote{\url{https://lightning.network/}}, which is one of the houses
+being built on Bitcoin's solid foundation. Future upgrades like Schnorr
+signatures~\cite{bip:schnorr} will enhance efficiency and privacy, as well as
+scripts (read: smart contracts) which will be indistinguishable from regular
+transactions thanks to Taproot~\cite{taproot}. Wise builders do indeed build on
+solid foundations.
 
 Satoshi wasn't only a wise builder technologically. He also understood
 that it would be necessary to make wise decisions ideologically.
@@ -86,8 +94,8 @@ that it would be necessary to make wise decisions ideologically.
 ``Being open source means anyone can independently review the code. If
 it was closed source, nobody could verify the security. I think it's
 essential for a program of this nature to be open source.''
+\flushright -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, in a reply to SmokeTooMuch \cite{satoshi-open-source}}
 \end{quotation}
-% > <cite>[Satoshi Nakamoto][5]</cite>
 
 Openness is paramount to security and inherent in open source and the
 free software movement. As Satoshi pointed out, secure protocols and the
@@ -107,7 +115,8 @@ also what makes fixing broken things more difficult than in a
 centralized environment, which is why everyone tries not to break things
 in the first place.
 
-Bitcoin taught me that moving slowly is one of its features, not a bug.
+\paragraph{Bitcoin taught me that moving slowly is one of its features, not a
+bug.}
 
 % ---
 %
@@ -126,8 +135,6 @@ Bitcoin taught me that moving slowly is one of its features, not a bug.
 % <!-- Down the Rabbit Hole -->
 % [lesson1]: {{ '/bitcoin/lessons/ch1-01-immutability-and-change' | absolute_url }}
 %
-% [pointed out]: http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source?commentId=2003008%3AComment%3A9493
-% [4]: https://bitcointalk.org/index.php?topic=195.msg1611#msg1611
 % [Unpacking Bitcoin's Social Contract]: https://uncommoncore.co/unpacking-bitcoins-social-contract/
 % [Matthew 7:24--27]: https://en.wikipedia.org/wiki/Parable_of_the_Wise_and_the_Foolish_Builders
 % [pay to script hash]: https://en.bitcoin.it/wiki/Pay_to_script_hash
@@ -135,7 +142,6 @@ Bitcoin taught me that moving slowly is one of its features, not a bug.
 % [lightning network]: https://lightning.network/
 % [Schnorr signatures]: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki#cite_ref-6-0
 % [Taproot]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-January/015614.html
-% [5]: https://bitcointalk.org/index.php?topic=13.msg46#msg46
 %
 % <!-- Wikipedia -->
 % [alice]: https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland

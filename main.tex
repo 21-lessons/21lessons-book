@@ -1,17 +1,72 @@
 % !TEX root = main.tex
-\documentclass{tufte-book}%[a4paper,twoside]
+% \documentclass{tufte-book}%[a4paper,twoside]
 % See https://github.com/Tufte-LaTeX/tufte-latex/blob/master/sample-book.tex for details
 
-\title{21 Lessons}
-\author{Gigi}
-\publisher{Do I Really Need a Publisher}
+% --- AMAZON BEGIN ---
+% WITHOUT BLEED
+% US Trade => 6x9
+\documentclass[paper=6in:9in,pagesize=pdftex,
+               headinclude=on,footinclude=on,12pt]{scrbook}
+%
+% Paper width
+% W = 6in
+% Paper height
+% H = 9in
+% Paper gutter
+% BCOR = 0.5in
+% Margin (0.5in imposed on lulu, recommended on createspace)
+% m = 0.5in
+% Text height
+% h = H - 2m = 8in
+% Text width
+% w = W - 2m - BCOR = 4.5in
+\areaset[0.50in]{4.5in}{8in}
+% --- AMAZON END ---
+
+% Copyright with title BEGIN
+\usepackage{fancyhdr}
+\def\secondpage{\clearpage\null\vfill
+\pagestyle{empty}
+\begin{minipage}[b]{0.9\textwidth}
+\normalsize 21 Lessons \newline
+\footnotesize What I've Learned From Falling Down the Bitcoin Rabbit Hole \par
+
+First edition. Version 0.3.0, git commit \texttt{2e5c5c6}.
+
+\footnotesize\raggedright
+\setlength{\parskip}{0.5\baselineskip}
+Copyright \copyright 2018--\the\year\ Gigi \par
+
+\includegraphics[width=2cm]{assets/images/cc-by-sa.pdf}
+
+This book and its on-line version are distributed under the terms of the
+Creative Commons Attribution-ShareAlike 4.0 license. A reference copy of this
+license may be found at the official creative commons
+page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
+
+\end{minipage}
+\vspace*{2\baselineskip}
+\cleardoublepage
+\rfoot{\thepage}}
+
+\makeatletter
+\g@addto@macro{\maketitle}{\secondpage}
+\makeatother
+% Copyright with title END
+
+
 
 % Packages
-\usepackage{lipsum}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{graphics/}}
+
+%%
+% For Quotes
+\usepackage{csquotes}
+\renewcommand\mkbegdispquote[2]{\makebox[0pt][r]{\textquotedblleft\,}}
+\renewcommand\mkenddispquote[2]{\,\textquotedblright#2}
 
 %%
 % Just some sample text
@@ -34,12 +89,13 @@
     % eprint=false
 % ]{biblatex}
 % \usepackage[backend=biber]{biblatex}
+\usepackage{url}
 \usepackage{natbib}
-\bibliographystyle{abbrvnat}
+\bibliographystyle{plain}
 
 %%
 % Hyperlinks
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 %%
 % For graphics / images
@@ -157,15 +213,28 @@
   {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
 \makeatother
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                   DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
 \frontmatter
+
+\title{21 Lessons}
+\subtitle{What I've Learned from Falling Down the Bitcoin Rabbit Hole}
+\author{Gigi}
+\date{}
 
 \maketitle
 
 \cleardoublepage
 
+\input{frontmatter/dedication}
+\input{frontmatter/foreword}
+\tableofcontents
 
+\input{frontmatter/ch0-00-preface}
 %%
 % Start the main matter (normal chapters)
 \mainmatter
@@ -196,6 +265,8 @@
 \input{lessons/ch3-20-cypherpunks-write-code}
 \input{lessons/ch3-21-metaphors-for-bitcoins-future}
 \input{chapters/ch4-00-conclusion}
+
+\listoffigures
 
 \bibliography{main}
 
