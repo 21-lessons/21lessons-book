@@ -23,8 +23,31 @@
 \areaset[0.50in]{4.5in}{8in}
 % --- AMAZON END ---
 
+% Copyright with title BEGIN
+\usepackage{fancyhdr}
+\def\secondpage{\clearpage\null\vfill
+\pagestyle{empty}
+\begin{minipage}[b]{0.9\textwidth}
+\normalsize 21 Lessons \newline
+\footnotesize What I've Learned From Falling Down the Bitcoin Rabbit Hole \par
+\footnotesize\raggedright
+\setlength{\parskip}{0.5\baselineskip}
+Copyright \copyright 2018--\the\year\ Gigi\par
+This book and its on-line version are distributed under the terms of the Creative Commons Attribution-ShareAlike 4.0 license.
+A reference copy of this license may be found at the official creative commons page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
+\end{minipage}
+\vspace*{2\baselineskip}
+\cleardoublepage
+\rfoot{\thepage}}
+
+\makeatletter
+\g@addto@macro{\maketitle}{\secondpage}
+\makeatother
+% Copyright with title END
+
+
 \title{21 Lessons}
-\subtitle{What I've Learned from Falling Down the Bitcoin Rabbit Hole }
+\subtitle{What I've Learned from Falling Down the Bitcoin Rabbit Hole}
 \author{Gigi}
 
 % Packages
