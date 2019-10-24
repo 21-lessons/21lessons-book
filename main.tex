@@ -188,7 +188,7 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
 }% command name -- adds backslash automatically
 \newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
 \newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
-\newenvironment{docspec}{\begin{samepage}\begin{quotation}\ttfamily\parskip0pt\parindent0pt\ignorespaces}{\end{quotation}\end{samepage}}% command specification environment
+\newenvironment{docspec}{\begin{quotation}\begin{samepage}\ttfamily\parskip0pt\parindent0pt\ignorespaces}{\end{samepage}\end{quotation}}% command specification environment
 \newcommand{\docenv}[1]{\texttt{#1}\index{#1 environment@\texttt{#1} environment}\index{environments!#1@\texttt{#1}}}% environment name
 \newcommand{\docenvdef}[1]{\hlred{\texttt{#1}}\label{env:#1}\index{#1 environment@\texttt{#1} environment}\index{environments!#1@\texttt{#1}}}% environment name
 \newcommand{\docpkg}[1]{\texttt{#1}\index{#1 package@\texttt{#1} package}\index{packages!#1@\texttt{#1}}}% package name
