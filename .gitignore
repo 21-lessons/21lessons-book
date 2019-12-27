@@ -1,17 +1,9 @@
 build
 *.bib~*
-main.aux
-main.bbl
-main.blg
-main.fdb_latexmk
-main.fls
-main.idx
-main.ilg
-main.ind
-main.lof
-main.out
-main.pdf
-main.synctex.gz
-main.log
-main.toc
 
+# Ignore all main files...
+main*
+
+# ...except these ones
+!main.bib
+!main.tex
