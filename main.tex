@@ -218,6 +218,30 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             eBook / Kindle / MOBi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% See https://www.lode.de/blog/how-to-create-a-kindle-ebook-with-latex/
+
+\ifxetex
+
+\else
+    \usepackage{endnotes}
+    \let\footcite\citep
+    \ifx\HCode\undefined
+        \def\myrule{\hrule}
+        \newcommand{\emdash}[1][]{\hspace{0pt}---\hspace{0pt}}%
+
+    \else
+        \def\myrule{\HCode{<hr style="clear: both" />}}
+            \def\semicolon{\detokenize{;}}
+            \def\emdash{\HCode{&\#8212;}}%
+            \renewcommand\newpage[1][]{\HCode{<mbp:pagebreak />}}
+    \fi
+    \let\footnote=\endnote
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                   DOCUMENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
