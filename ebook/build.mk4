@@ -1,0 +1,34 @@
+local domfilter = require "make4ht-domfilter"
+local filter = require "make4ht-filter"
+
+local process = domfilter {function(dom)
+  -- process table of contents and remove unnecessary white space and <br> tags
+  for _, toc in ipairs(dom:query_selector(".tableofcontents")) do
+    for _, child in ipairs(toc:get_children()) do
+      if child:is_text() then
+        -- replace all whitespace with linebreaks
+        child._text = "\n"
+      elseif child:is_element() then
+        local name = child:get_element_name()
+        -- remove <br> elements
+        if name == "br" then
+          child:remove_node()
+        -- change spans to divs
+        elseif name == "span" then
+          child._name = "div"
+        end
+      end
+    end
+
+  end
+
+return dom
+end}
+
+local cssprocess = filter(function(s)
+   local s = s:gsub("sectionToc {margin%-left%:.em;}","sectionToc {margin-left:0em;}")
+   return s
+end)
+
+Make:match("html$", process)
+Make:match("css$", cssprocess)
