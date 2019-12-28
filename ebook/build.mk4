@@ -33,7 +33,13 @@ end)
 Make:match("html$", process)
 Make:match("css$", cssprocess)
 
-Make:add("bibtex","bibtex${input}")
-Make:bibtex {}
-Make:htlatex {}
-Make:htlatex {}
+Make:add("biber","biber ${input}")
+if mode=="draft" then
+  Make:htlatex {}
+else
+  Make:htlatex {}
+  Make:biber {}
+  Make:htlatex {}
+  Make:htlatex {}
+  Make:htlatex {}
+end

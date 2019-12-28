@@ -91,10 +91,11 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
     % doi=true,
     % eprint=false
 % ]{biblatex}
-% \usepackage[backend=biber]{biblatex}
+\usepackage[style=authoryear,backend=biber]{biblatex}
 \usepackage{url}
-\usepackage{natbib}
-\bibliographystyle{plain}
+\addbibresource{main.bib}
+% \usepackage{natbib}
+% \bibliographystyle{plain}
 
 %%
 % Hyperlinks
@@ -309,6 +310,6 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
 \listoffigures
 
 \input{backmatter/bibliography}
-\bibliography{main}
+\printbibliography
 
 \end{document}
