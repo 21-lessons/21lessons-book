@@ -32,3 +32,8 @@ end)
 
 Make:match("html$", process)
 Make:match("css$", cssprocess)
+
+Make:add("bibtex","bibtex${input}")
+Make:bibtex {}
+Make:htlatex {}
+Make:htlatex {}
