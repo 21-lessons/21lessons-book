@@ -1,5 +1,4 @@
 #!/bin/sh
 
 rm -rfv main-mobi
-rm -v main*
-git checkout -- main.bib main.tex
+find . -type f -name 'main*' ! -name 'main.tex' ! -name 'main.bib'
