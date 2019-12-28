@@ -240,7 +240,7 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
             \def\emdash{\HCode{&\#8212;}}%
             % \renewcommand\newpage[1][]{\HCode{<mbp:pagebreak />}}
     \fi
-    % \let\footnote=\endnote
+    \let\footnote=\endnote
 \fi
 
 
@@ -311,5 +311,6 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
 
 \input{backmatter/bibliography}
 \printbibliography
+\theendnotes
 
 \end{document}
