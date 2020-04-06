@@ -1,6 +1,23 @@
 # 21 Lessons
 
+This repository contains the LaTeX source code for the print version of *21
+Lessons - What I've Learned from Falling Down the Bitcoin Rabbit Hole*.
 
+## About this book
+
+This is a bit of an unusual book. But hey, Bitcoin is a bit of an unusual
+technology, so an unusual book about Bitcoin might be fitting. This book came to
+be because of one simple question: *What have you learned from Bitcoin?* I tried
+to answer this question in a single tweet. Then the tweet turned into a
+tweetstorm. The tweetstorm turned into an article. The article turned into three
+articles. Three articles turned into 21 Lessons. And 21 Lessons turned into this
+book.
+
+## Issues, Errors, Comments, Contributions
+
+If you find an error, a dead link, or any other issue, please create an issue on
+GitHub or [contact me](https://dergigi.com/contact). Feel free to resolve the
+issue directly, if you can, by creating a pull request.
 
 ---
 
