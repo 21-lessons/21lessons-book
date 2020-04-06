@@ -3,6 +3,8 @@
 This repository contains the LaTeX source code for the print version of *21
 Lessons - What I've Learned from Falling Down the Bitcoin Rabbit Hole*.
 
+![](https://21lessons.com/assets/images/21-lessons-book.png)
+
 ## About This Book
 
 This is a bit of an unusual book. But hey, Bitcoin is a bit of an unusual
@@ -39,6 +41,30 @@ audio version read by Guy Swann from the Cryptoconomy podcast. While the online
 version is pretty much the same as the print version, there is some additional
 content in the print version: a foreword by Hass McCook, and a quick
 introductory section about the book (and about the author).
+
+## Translations
+
+Thanks to the awesome members of the Bitcoin community the book was [translated
+to various languages](https://21lessons.com/translations), including:
+
+* Spanish
+* Turkish
+* Chinese
+* [German](https://amzn.to/2VZXe2o)
+* Finnish
+* Brazilian Portuguese
+* Japanese
+* Greek
+
+The German print version of the book has a [separate
+repository](https://github.com/dergigi/21-lessons-book-de), maintained by the
+author.
+
+## License
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 ---
 
