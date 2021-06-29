@@ -71,6 +71,6 @@ http://creativecommons.org/licenses/by-sa/4.0/.
 
 ---
 
-Created with :heart: by [Gigi](https://dergigi.com/support/).
+Created with 🧡 by [Gigi](https://dergigi.com/support/).
 
 [![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@dergigi/F0918E)](https://tippin.me/@dergigi)
