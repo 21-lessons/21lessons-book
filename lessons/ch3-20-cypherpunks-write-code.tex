@@ -1,82 +1,81 @@
-\chapter{Cypherpunks Write Code}
+\chapter{Cypherpunks Escrevem Código}
 \label{les:20}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-\enquote{I see you're trying to invent something.}
+\begin{chapquote}{Lewis Carroll, \textit{Alice no País das Maravilhas}}
+\enquote{Vejo que você tenta inventar algo.}
 \end{chapquote}
 
-Like many great ideas, Bitcoin didn't come out of nowhere. It was made
-possible by utilizing and combining many innovations and discoveries in
-mathematics, physics, computer science, and other fields. While
-undoubtedly a genius, Satoshi wouldn't have been able to invent Bitcoin
-without the giants on whose shoulders he was standing on.
+Grandes idéias não surgem do nada, com o Bitcoin, também foi assim. 
+Ele só foi possível combinando muitas inovações e descobertas em matemática, 
+física, ciências da computação, e muitos outras áreas. Mesmo sendo um gênio, 
+Satoshi não conseguiria inventar o Bitcoin sem estar apoiado sobre ombros de gigantes.
 
 \begin{quotation}\begin{samepage}
-\enquote{He who only wishes and hopes does not interfere actively with the
-course of events and with the shaping of his own destiny.}
+\enquote{Aquele que apenas espera e deseja não interfere ativamente com o curso de eventos e com a criação do próprio destino.}
 \begin{flushright} -- Ludwig von Mises\footnote{Ludwig von Mises, \textit{Human Action} \cite{human-action}}
 \end{flushright}\end{samepage}\end{quotation}
 % > <cite>[Ludwig Von Mises]</cite>
 
-One of these giants is Eric Hughes, one of the founders of the cypherpunk
-movement and author of \textit{A Cypherpunk's Manifesto}. It's hard to imagine
-that Satoshi wasn't influenced by this manifesto. It speaks of many things which
-Bitcoin enables and utilizes, such as direct and private transactions,
-electronic money and cash, anonymous systems, and defending privacy with
-cryptography and digital signatures.
+Um desses gigantes é o Eric Hughes, um dos fundadores do movimento cypherpunk
+e escritor do \textit{O Manifesto dos Cypherpunks}. Em inglês \textit{A Cypherpunk's Manifesto}. 
+É difícil imaginar que Satoshi 
+não tenha sido influenciado por esse manifesto. Nele já se falava de muitas coisas 
+que o Bitcoin proporciona e usa, como transações diretas e privadas, dinheiro e moedas 
+eletrônicas, sistemas anônimos, e a defesa de privacidade com criptografia e assinaturas digitais.
 
 \begin{quotation}\begin{samepage}
-\enquote{Privacy is necessary for an open society in the electronic age.
-[...] Since we desire privacy, we must ensure that each party to a
-transaction have knowledge only of that which is directly necessary
-for that transaction. [...]
-Therefore, privacy in an open society requires anonymous transaction
-systems. Until now, cash has been the primary such system. An
-anonymous transaction system is not a secret transaction system.
-[...]
-We the Cypherpunks are dedicated to building anonymous systems. We are
-defending our privacy with cryptography, with anonymous mail
-forwarding systems, with digital signatures, and with electronic
-money.
-Cypherpunks write code.}
+\enquote{Privacidade é necessária para uma sociedade aberta na era eletrônica.
+	[...] Já que desejamos privacidade, nós temos que ter certeza que cada parte 
+	na transação tenha conhecimento só do que é diretamente necessário para 
+	aquela transação [...]
+	Assim, privacidade em uma sociedade aberta requer sistemas de transação anônima. 
+	Até agora, o dinheiro tem sido o principal sistema desse tipo. Um
+	O sistema de transações anônimas não é um sistema de transações secretas. [...]
+	Nós os Cypherpunks, estamos dedicados em construir sistemas anônimos. Nós vamos 
+	defender a nossas privacidade com criptografia, com sistemas de encaminhamento 
+	de e-mails anônimos, com assinaturas digitais, e com dinheiro eletrônico. 
+	Cypherpunks escrevem código.}
+
 \begin{flushright} -- Eric Hughes\footnote{Eric Hughes, A Cypherpunk's Manifesto \cite{cypherpunk-manifesto}}
 \end{flushright}\end{samepage}\end{quotation}
 
-Cypherpunks do not find comfort in hopes and wishes. They actively
-interfere with the course of events and shape their own destiny.
-Cypherpunks write code.
+Cypherpunks não se confortam com esperanças e desejos. 
+Eles ativamente interferem com os eventos em curso e moldam seu próprio destino. 
+Cypherpunks escrevem código.
 
-Thus, in true cypherpunk fashion, Satoshi sat down and started to write
-code. Code which took an abstract idea and proved to the world that it
-actually worked. Code which planted the seed of a new economic reality.
-Thanks to this code, everyone can verify that this novel system actually
-works, and every 10 minutes or so Bitcoin proofs to the world that it is
-still living.
+Assim, no verdadeiro estilo cypherpunk, Satoshi sentou e começou a escrever código. 
+Código que pegou um ideia abstrata e provou para o mundo que ela realmente funcionava. 
+Código que plantou a semente de uma nova realidade econômica.
+Graças a esse código, todo mundo pode verificar que esse sistema novo realmente funciona, 
+a cada dez minutos mais ou menos, o Bitcoin provou isso para o mundo e ainda vive.
 
 \begin{figure}
   \includegraphics{assets/images/bitcoin-code-white.png}
-  \caption{Code excerpts from Bitcoin version 0.1}
+  \caption{Trechos de código do Bitcoin version 0.1}
   \label{fig:bitcoin-code-white}
 \end{figure}
 
-To make sure that his innovation transcends fantasy and becomes reality, Satoshi
-wrote code to implement his idea before he wrote the whitepaper. He also made
-sure not to delay\footnote{\enquote{We shouldn't delay forever until every possible
-feature is done.} -- Satoshi Nakamoto~\cite{satoshi-delay}} any release forever.
-After all, \enquote{there's always going to be one more thing to do.}
+Para ter certeza de que sua inovação transcende a fantasia e vira realidade, Satoshi 
+escreveu código para implementar essa idéia antes de escrever o artigo técnico. 
+Ele também fez questão de não atrasar\footnote{\enquote{Nós não devemos atrasar 
+		para sempre até que todos os recursos estejam prontos.} 
+	-- Satoshi Nakamoto~\cite{satoshi-delay}} qualquer versão para sempre.
+	Até porque, \enquote{Sempre tem mais uma coisa para fazer.}
 
 \begin{quotation}\begin{samepage}
-\enquote{I had to write all the code before I could convince myself that I
-could solve every problem, then I wrote the paper.}
+\enquote{Eu tive que escrever todo aquele código, antes de me convencer que eu podia resolver todo problema, só depois eu escrevi o artigo.}
 \begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, Re: Bitcoin P2P e-cash paper \cite{satoshi-mail-code-first}}
 \end{flushright}\end{samepage}\end{quotation}
 
-In today's world of endless promises and doubtful execution, an exercise
-in dedicated building was desperately needed. Be deliberate, convince
-yourself that you can actually solve the problems, and implement the
-solutions. We should all aim to be a bit more cypherpunk.
+No mundo de hoje, cheio de promessas de execução duvidosa , um exercício em construção dedicada 
+era desesperadamente necessário. Seja 
 
-\paragraph{Bitcoin taught me that cypherpunks write code.}
+In today's world of endless promises and doubtful execution, an exercise
+in dedicated building was desperately needed. Seja proposital, convença-se 
+de que você pode realmente resolver os problemas e implementar as soluções. 
+Todos nós devemos ter como objetivo ser um pouco mais cypherpunk. 
+
+\paragraph{Bitcoin me ensinou que cypherpunks escrevem código.}
 
 % ---
 %
