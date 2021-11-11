@@ -58,6 +58,7 @@ to various languages](https://21lessons.com/translations), including:
 * Persian
 * Indonesian
 * Italian
+* French
 
 The German print version of the book has a [separate
 repository](https://github.com/21-lessons/21-lessons-book-de), maintained by the
