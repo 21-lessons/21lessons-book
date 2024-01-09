@@ -37,7 +37,7 @@ versions of the book.
 
 The [online version](https://github.com/21-lessons/21-lessons.github.io) of this
 book is freely available on [21lessons.com](https://21lessons.com), including an
-audio version read by Guy Swann from the Cryptoconomy podcast. While the online
+audio version read by Guy Swann from the Bitcoin Audible podcast. While the online
 version is pretty much the same as the print version, there is some additional
 content in the print version: a foreword by Hass McCook, and a quick
 introductory section about the book (and about the author).
